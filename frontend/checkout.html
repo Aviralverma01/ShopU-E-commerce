@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | ShopU Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="index.html" class="logo">Shop<span>U</span></a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="orders.html">My Orders</a>
+            <a href="login.html">Login</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <!-- Checkout Section -->
+    <main class="checkout-page">
+
+        <section class="page-heading">
+            <p class="eyebrow">ALMOST THERE</p>
+            <h1>Complete Your <span>Order</span></h1>
+            <p>Enter your delivery details to place your order.</p>
+        </section>
+
+        <div class="checkout-layout">
+
+            <!-- Delivery Form -->
+            <section class="checkout-form-section">
+
+                <h2>Delivery Information</h2>
+
+                <form id="checkout-form">
+
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input
+                            type="text"
+                            id="full-name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter your phone number"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Full Address</label>
+                        <textarea
+                            id="address"
+                            rows="4"
+                            placeholder="House number, street, area..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input
+                            type="text"
+                            id="city"
+                            placeholder="Enter your city"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pincode">PIN Code</label>
+                        <input
+                            type="text"
+                            id="pincode"
+                            placeholder="Enter your PIN code"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label>Payment Method</label>
+
+                        <div class="payment-option">
+                            <input
+                                type="radio"
+                                id="cod"
+                                name="payment"
+                                value="COD"
+                                checked
+                            >
+                            <label for="cod">Cash on Delivery</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="primary-btn">
+                        Place Order
+                    </button>
+
+                    <p id="checkout-message" class="form-message"></p>
+
+                </form>
+
+            </section>
+
+            <!-- Order Summary -->
+            <aside class="checkout-summary">
+
+                <h2>Order Summary</h2>
+
+                <div id="checkout-items">
+                    <!-- Checkout items will be loaded using JavaScript -->
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-row">
+                    <span>Total Items</span>
+                    <span id="checkout-total-items">0</span>
+                </div>
+
+                <div class="summary-row grand-total">
+                    <span>Total Amount</span>
+                    <span id="checkout-total">₹0</span>
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 ShopU Store. All rights reserved.</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/checkout.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | ShopU</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">ShopU</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="orders.html">My Orders</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="product-details">
+
+            <div class="product-details-image">
+                <img id="product-image" src="" alt="Product Image">
+            </div>
+
+            <div class="product-details-info">
+                <p id="product-category"></p>
+
+                <h1 id="product-name">Loading...</h1>
+
+                <h2 id="product-price"></h2>
+
+                <p id="product-description"></p>
+
+                <p id="product-stock"></p>
+
+                <button id="add-to-cart-btn" class="btn">
+                    Add to Cart
+                </button>
+
+                <p id="product-message"></p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 ShopU. All rights reserved.</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/product-details.js"></script>
+
+</body>
+</html>

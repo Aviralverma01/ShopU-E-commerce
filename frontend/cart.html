@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | ShopU Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="index.html" class="logo">Shop<span>U</span></a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="orders.html">My Orders</a>
+            <a href="login.html">Login</a>
+            <a href="cart.html" class="active cart-link">Cart</a>
+        </nav>
+    </header>
+
+    <!-- Cart Section -->
+    <main class="cart-page">
+
+        <section class="page-heading">
+            <p class="eyebrow">YOUR SELECTION</p>
+            <h1>Shopping <span>Cart</span></h1>
+            <p>Review your items before placing your order.</p>
+        </section>
+
+        <div class="cart-layout">
+
+            <!-- Cart Items -->
+            <section class="cart-items-section">
+
+                <h2>Your Items</h2>
+
+                <div id="cart-items">
+                    <!-- Cart items will be added using JavaScript -->
+                </div>
+
+                <p id="empty-cart" class="empty-message" hidden>
+                    Your cart is empty.
+                    <a href="products.html">Explore Products</a>
+                </p>
+
+            </section>
+
+            <!-- Cart Summary -->
+            <aside class="cart-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-row">
+                    <span>Total Items</span>
+                    <span id="cart-total-items">0</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">₹0</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span>Free</span>
+                </div>
+
+                <div class="summary-divider"></div>
+
+                <div class="summary-row grand-total">
+                    <span>Total Amount</span>
+                    <span id="cart-total">₹0</span>
+                </div>
+
+                <button id="checkout-btn" class="primary-btn" type="button">
+                    Proceed to Checkout
+                </button>
+
+                <a href="products.html" class="continue-shopping">
+                    Continue Shopping
+                </a>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 ShopU Store. All rights reserved.</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
+</html>

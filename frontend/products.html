@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | ShopU Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="index.html" class="logo">TASK<span>ONE</span></a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="orders.html">My Orders</a>
+            <a href="login.html">Login</a>
+            <a href="cart.html" class="cart-link">Cart</a>
+        </nav>
+    </header>
+
+    <!-- Products Section -->
+    <main class="products-page">
+
+        <section class="page-heading">
+            <p class="eyebrow">OUR COLLECTION</p>
+            <h1>Explore <span>Products</span></h1>
+            <p>Discover quality products at amazing prices.</p>
+        </section>
+
+        <!-- Search and Filter -->
+        <section class="product-controls">
+
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search products..."
+            >
+
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Accessories">Accessories</option>
+            </select>
+
+            <button id="search-btn" type="button">Search</button>
+
+        </section>
+
+        <!-- Product Listing -->
+        <section class="products-section">
+
+            <div class="section-heading">
+                <h2>All Products</h2>
+                <p id="product-count">Loading products...</p>
+            </div>
+
+            <div id="product-list" class="product-grid">
+                <!-- Products will be loaded using JavaScript -->
+            </div>
+
+            <p id="no-products" class="empty-message" hidden>
+                No products found. Try another search.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 ShopU Store. All rights reserved.</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/products.js"></script>
+
+</body>
+</html>

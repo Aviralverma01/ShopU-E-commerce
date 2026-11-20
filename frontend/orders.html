@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders | Task One Store</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="index.html" class="logo">TASK<span>ONE</span></a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="orders.html" class="active">My Orders</a>
+            <a href="login.html">Login</a>
+            <a href="cart.html" class="cart-link">Cart</a>
+        </nav>
+    </header>
+
+    <!-- Orders Section -->
+    <main class="orders-page">
+
+        <section class="page-heading">
+            <p class="eyebrow">ORDER HISTORY</p>
+            <h1>My <span>Orders</span></h1>
+            <p>Track your purchases and check their delivery status.</p>
+        </section>
+
+        <section class="orders-section">
+
+            <div class="section-heading">
+                <h2>Recent Orders</h2>
+                <button id="refresh-orders" class="secondary-btn" type="button">
+                    Refresh Orders
+                </button>
+            </div>
+
+            <div id="orders-list">
+                <!-- Orders will be loaded using JavaScript -->
+            </div>
+
+            <p id="no-orders" class="empty-message" hidden>
+                You haven't placed any orders yet.
+                <a href="products.html">Start Shopping</a>
+            </p>
+
+            <p id="orders-message" class="form-message"></p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Task One Store. All rights reserved.</p>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/orders.js"></script>
+
+</body>
+</html>
